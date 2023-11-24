@@ -102,7 +102,7 @@
 
           <div class="is-size-5 publication-authors">
             <span class="author-block"><sup>1</sup>Tsinghua University,</span>
-            <span class="author-block"><sup>2</sup><a href="https://mmlab.ie.cuhk.edu.hk/">MMLab</a>, The Chinese University of Hong Kong</span>
+            <span class="author-block"><sup>2</sup>The Chinese University of Hong Kong</span>
           </div>
 
           <div class="column has-text-centered">
@@ -167,11 +167,11 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <!-- <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/teaser.mp4"
+      <video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="./sources/videos/teaser.mp4"
                 type="video/mp4">
-      </video> -->
-      <img src="./sources/images/intro.png" alt="teaser">
+      </video>
+      <!-- <img src="./sources/images/intro.png" alt="teaser"> -->
       <h2 class="subtitle has-text-centered">
         Obj-NeRF extracts object NeRFs from multi-view images and performs NeRF editing works 
       </h2>
@@ -249,10 +249,10 @@
             Neural Radiance Fields (NeRFs) have demonstrated remarkable effectiveness in novel view synthesis within 3D environments. However, extracting a radiance field of one specific object from multi-view images encounters substantial challenges due to occlusion and background complexity, thereby presenting difficulties in downstream applications such as NeRF editing and 3D mesh extraction.
           </p>
           <p>
-            To solve this problem, in this paper, we propose <b>Obj-NeRF</b>, a comprehensive pipeline that recovers the 3D geometry of a specific object from multi-view images using a single prompt. This method combines the 2D segmentation capabilities of the Segment Anything Model (SAM) in conjunction with the 3D reconstruction ability of NeRF. Specifically, we first obtain multi-view segmentation for the indicated object using SAM with a single prompt. Then, we use the segmentation images to supervise NeRF construction, integrating several effective techniques. Additionally, we construct a large object-level NeRF dataset containing diverse objects, which can be useful in various downstream tasks.
+            To solve this problem, in this paper, we propose <b><i>Obj-NeRF</i></b>, a comprehensive pipeline that recovers the 3D geometry of a specific object from multi-view images using a single prompt. This method combines the 2D segmentation capabilities of the Segment Anything Model (SAM) in conjunction with the 3D reconstruction ability of NeRF. Specifically, we first obtain multi-view segmentation for the indicated object using SAM with a single prompt. Then, we use the segmentation images to supervise NeRF construction, integrating several effective techniques. Additionally, we construct a large object-level NeRF dataset containing diverse objects, which can be useful in various downstream tasks.
           </p>
           <p>
-            To demonstrate the practicality of our method, we also apply Obj-NeRF to various applications, including object removal, rotation, replacement, and recoloring. 
+            To demonstrate the practicality of our method, we also apply <b>Obj-NeRF</b> to various applications, including object removal, rotation, replacement, and recoloring. 
           </p>
         </div>
       </div>
@@ -276,39 +276,161 @@
 
 <section class="section">
   <div class="container is-max-desktop">
+    <div class="container">
+      <h2 class="title is-3">Object NeRF Dataset</h2>
+      Extracting object NeRFs from large multi-view datasets with textual input <i>"chair"</i> 
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-chair8">
+          <video poster="" id="chair8" autoplay controls muted loop playsinline height="100%">
+            <source src="./sources/videos/chairs/8.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-chair10">
+          <video poster="" id="chair10" autoplay controls muted loop playsinline height="100%">
+            <source src="./sources/videos/chairs/10.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-chair21">
+          <video poster="" id="chair21" autoplay controls muted loop playsinline height="100%">
+            <source src="./sources/videos/chairs/21.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-chair22">
+          <video poster="" id="chair22" autoplay controls muted loop playsinline height="100%">
+            <source src="./sources/videos/chairs/22.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-chair33">
+          <video poster="" id="chair33" autoplay controls muted loop playsinline height="100%">
+            <source src="./sources/videos/chairs/33.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-chair38">
+          <video poster="" id="chair38" autoplay controls muted loop playsinline height="100%">
+            <source src="./sources/videos/chairs/38.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-chair43">
+          <video poster="" id="chair43" autoplay controls muted loop playsinline height="100%">
+            <source src="./sources/videos/chairs/43.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-chair92">
+          <video poster="" id="chair92" autoplay controls muted loop playsinline height="100%">
+            <source src="./sources/videos/chairs/92.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-chair98">
+          <video poster="" id="chair98" autoplay controls muted loop playsinline height="100%">
+            <source src="./sources/videos/chairs/98.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-chair126">
+          <video poster="" id="chair126" autoplay controls muted loop playsinline height="100%">
+            <source src="./sources/videos/chairs/126.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-chair129">
+          <video poster="" id="chair129" autoplay controls muted loop playsinline height="100%">
+            <source src="./sources/videos/chairs/129.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-chair133">
+          <video poster="" id="chair133" autoplay controls muted loop playsinline height="100%">
+            <source src="./sources/videos/chairs/133.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-chair141">
+          <video poster="" id="chair141" autoplay controls muted loop playsinline height="100%">
+            <source src="./sources/videos/chairs/141.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-chair163">
+          <video poster="" id="chair163" autoplay controls muted loop playsinline height="100%">
+            <source src="./sources/videos/chairs/163.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-chair206">
+          <video poster="" id="chair206" autoplay controls muted loop playsinline height="100%">
+            <source src="./sources/videos/chairs/206.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-chair242">
+          <video poster="" id="chair242" autoplay controls muted loop playsinline height="100%">
+            <source src="./sources/videos/chairs/242.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <h2 class="title is-3">Extracting Object NeRFs from Large Indoor Scenario</h2>
+      <div class="content">
+        <p>
+          <b>Obj-NeRF</b> extracts the <i>"toy"</i>, <i>"guitar"</i>, <i>"closestool"</i> from ScanNet large indoor scenario with a few prompts on one single image. 
+        </p>
+        <video id="dollyzoom" autoplay controls muted loop playsinline style="width: 60%; margin: 0 auto; display: block;">
+          <source src="./sources/videos/dataset.mp4"
+                  type="video/mp4">
+        </video>
+      </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <h2 class="title is-3">Compare to Existing Works</h2>
     <div class="columns is-centered">
-
       <!-- Visual Effects. -->
       <div class="column">
         <div class="content">
-          <!-- <h2 class="title is-3">Visual Effects</h2> -->
-          <!-- <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
+          <h3 class="title is-4">Scene 1: horns</h3>
+          <p>
+            <b>Obj-NeRF</b> will provide higher reconstruction resolution than existing works. 
           </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dollyzoom-stacked.mp4"
+          <video id="dollyzoom" autoplay controls muted loop playsinline style="width: 80%">
+            <source src="./sources/videos/compare_horns.mp4"
                     type="video/mp4">
-          </video> -->
+          </video>
         </div>
       </div>
       <!--/ Visual Effects. -->
 
       <!-- Matting. -->
       <div class="column">
-        <!-- <h2 class="title is-3">Matting</h2> -->
+        <h3 class="title is-4">Scene 2: counter</h3>
         <div class="columns is-centered">
-          <!-- <div class="column content">
+          <div class="column content">
             <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
+              Object NeRFs segmented from <b>Obj-NeRF</b> will have fewer floaters. 
             </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/matting.mp4"
+            <video id="dollyzoom" autoplay controls muted loop playsinline style="width: 80%">
+              <source src="./sources/videos/comparte_bowl.mp4"
                       type="video/mp4">
             </video>
-          </div> -->
+          </div>
 
         </div>
       </div>
@@ -381,7 +503,7 @@
 
 
     <!-- Concurrent Work. -->
-    <div class="columns is-centered">
+    <!-- <div class="columns is-centered">
       <div class="column is-full-width">
         <h2 class="title is-3">Related Links</h2>
 
@@ -408,7 +530,7 @@
     <!--/ Concurrent Work. -->
 
   </div>
-</section>
+</section> -->
 
 
 <section class="section" id="BibTeX">
