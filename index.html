@@ -8,19 +8,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Obj-NeRF: Extracting Object NeRFs from Multi-view Images</title>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GEP72JRLXN"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', 'G-PYVRSFMDRL');
-  </script> -->
+    gtag('config', 'G-GEP72JRLXN');
+  </script>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
@@ -33,7 +29,10 @@
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
   <!-- <link rel="icon" href="./static/images/favicon.svg"> -->
-  <link rel="icon" href="sources/images/temp.png"> 
+  <link rel="apple-touch-icon" sizes="180x180" href="sources/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="sources/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="sources/icons/favicon-16x16.png">
+  <link rel="manifest" href="sources/icons/site.webmanifest">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -44,13 +43,13 @@
 <body>
 
 <nav class="navbar" role="navigation" aria-label="main navigation">
-  <!-- <div class="navbar-brand">
+  <div class="navbar-brand">
     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
     </a>
-  </div> -->
+  </div>
   <div class="navbar-menu">
     <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
       <!-- <a class="navbar-item" href="https://keunhong.com">
@@ -60,9 +59,9 @@
       </a> -->
 
       <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
+        <!-- <a class="navbar-link">
           More Research
-        </a>
+        </a> -->
         <!-- <div class="navbar-dropdown">
           <a class="navbar-item" href="https://hypernerf.github.io">
             HyperNeRF
@@ -118,6 +117,7 @@
                   <span>Paper</span>
                 </a>
               </span>
+              <!-- arXiv Link. -->
               <span class="link-block">
                 <a href="https://arxiv.org/abs/2311.15291"
                    class="external-link button is-normal is-rounded is-dark">
@@ -405,7 +405,7 @@
 
     <h2 class="title is-3">Compare to Existing Works</h2>
     <div class="columns is-centered">
-      <!-- Visual Effects. -->
+      <!-- Compare 1. -->
       <div class="column">
         <div class="content">
           <h3 class="title is-4">Scene 1: horns</h3>
@@ -418,9 +418,9 @@
           </video>
         </div>
       </div>
-      <!--/ Visual Effects. -->
+      <!--/ Compare 1. -->
 
-      <!-- Matting. -->
+      <!-- Compare 2. -->
       <div class="column">
         <h3 class="title is-4">Scene 2: counter</h3>
         <div class="columns is-centered">
@@ -437,16 +437,16 @@
         </div>
       </div>
     </div>
-    <!--/ Matting. -->
+    <!--/ Compare 2. -->
 
     <!-- Animation. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
+    <!-- <div class="columns is-centered"> -->
+      <!-- <div class="column is-full-width"> -->
         <!-- <h2 class="title is-3">Animation</h2> -->
 
         <!-- Interpolating. -->
-        <!-- <h3 class="title is-4">Interpolating states</h3> -->
-        <!-- <div class="content has-text-justified">
+        <!-- <h3 class="title is-4">Interpolating states</h3>
+        <div class="content has-text-justified">
           <p>
             We can also animate the scene by interpolating the deformation latent codes of two input
             frames. Use the slider here to linearly interpolate between the left frame and the right
@@ -479,8 +479,8 @@
         <!--/ Interpolating. -->
 
         <!-- Re-rendering. -->
-        <!-- <h3 class="title is-4">Re-rendering the input video</h3> -->
-        <!-- <div class="content has-text-justified">
+        <!-- <h3 class="title is-4">Re-rendering the input video</h3>
+        <div class="content has-text-justified">
           <p>
             Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
             viewpoint such as a stabilized camera by playing back the training deformations.
@@ -499,8 +499,8 @@
         </div> -->
         <!--/ Re-rendering. -->
 
-      </div>
-    </div>
+      <!-- </div> -->
+    <!-- </div> -->
     <!--/ Animation. -->
 
 
@@ -509,7 +509,7 @@
       <div class="column is-full-width">
         <h2 class="title is-3">Related Links</h2>
 
-        <!-- <div class="content has-text-justified">
+        <div class="content has-text-justified">
           <p>
             There's a lot of excellent work that was introduced around the same time as ours.
           </p>
@@ -526,13 +526,13 @@
           <p>
             There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
           </p>
-        </div> -->
+        </div>
       </div>
-    </div>
+    </div> -->
     <!--/ Concurrent Work. -->
 
   </div>
-</section> -->
+</section>
 
 
 <section class="section" id="BibTeX">
